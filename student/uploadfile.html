@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Upload file</title>
+        <style type="text/css">
+            table{
+                width : 60%;
+                text-align: center;
+                
+
+            }
+            body
+            {   
+            
+                background-color: lightcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <form action = "/uploaded" method ="POST" enctype="multipart/form-data">
+         
+        <table border="1" align="center" >
+        <tr>
+            <td>Upload 10th marksheet </td>
+            <td><input type = "file"  name = "file1"/></td>
+        </tr>
+        <tr>
+            <td>Upload 10+2 marksheet </td>
+            <td><input type="file" name="file1"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit"/></td>
+        </tr>
+        </table>
+        </form>
+
+    </body>
+</html>

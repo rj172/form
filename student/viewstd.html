@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> All Student Details </title>
+        <style type = "text/css">
+            #t{
+              width:60%;
+            }
+            body
+            {
+                background-color: lightcyan;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h3> All Student Details </h3>
+        <table id="t" border = "1" cellpadding="10px" cellspacing="10px" align = "center">
+            <tr>
+                    <td><b>Name</b></td>
+                    <td><b>Gender</b></td>
+                    <td><b>DOB</b></td>
+                    <td><b>Mobile</b></td>
+                    <td><b>Email ID</b></td>
+                    <td><b>Stream</b></td>
+                
+            </tr>
+            {%for std in std_info %}
+        
+            <tr>
+                
+                <td>{{std.EName}}</td>
+                <td>{{std.EGender}}</td>
+                <td>{{std.Edob}}</td>
+                <td>{{std.EMobile}}</td>
+                <td>{{std.EEmail}}</td>
+                <td>{{std.EStream}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

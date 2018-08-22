@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style type="text/css">
+            #p{
+                background-color: #cccccc;
+                background-repeat: repeat-x;
+            }
+            #d{
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 18px;
+                
+            }
+            body{
+                font-size:20px;
+               background-color:lightcyan;
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+       
+        <h1 style="text-align: center ;color:red;">Online form submission</h1>
+        <form action = "/addstd">
+        <table  id="d" border="1" style="width:65%;" cellspacing="10px" cellpadding="10px" align="center">
+               
+            <caption>Fill the form to submit your application</caption>
+            <tr>
+                <td>name:</td>
+                <td><input  type="text" id="name" placeholder="enter name" name="tfname" required/></td>
+                
+            </tr>
+            <tr>
+                <td>select gender </td>
+                <td>
+                    <input type="radio" name="gender" value="male" required>male
+                    <input type="radio" name="gender" value="female" required>female
+                </td>
+            </tr>
+            <tr>
+                <td>enter date of birth</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+           
+             <tr>
+                <td>enter phone number :</td>
+                <td><input type="tel" name="mobile"  placeholder="enter 10 digit phone number"    required/></td>
+            </tr>
+            <tr>
+                <td>enter email address</td>
+                <td><input type="email" name="email"   placeholder="enter email address" required/></td>
+            </tr>
+            <tr>
+                <td>enter the stream you want to opt for:</td>
+                <td>
+                    <input type="radio" name="stream" value="cs" required>cse
+                    <input type="radio" name="stream" value="mech">mechanical
+                    <input type="radio" name="stream" value="el">electronics
+                    <input type="radio" name="stream" value="civil">civil
+                    <input type="radio" name="stream" value="it">inf. tech.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">To upload marksheets please navigate from toolbar or <a href="/upload"/ >click here</a></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <input type="submit" />
+                    
+                </td>
+            </tr>
+            
+        </table>
+        
+            
+       </form>
+    </body>
+</html>
